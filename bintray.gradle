@@ -1,9 +1,9 @@
 apply plugin: 'com.jfrog.bintray'
 
-def siteUrl = 'https://github.com/mogujie'      // 项目的主页
-def gitUrl = 'https://github.com/mogujie'   // Git仓库的url
-group = "com.mogujie.gradle"  // Maven Group ID for the artifact，一般填你唯一的包名
-version = "1.1.34"
+def siteUrl = 'https://github.com/zhoujh/WebpConvert_Gradle_Plugin'      // 项目的主页
+def gitUrl = 'https://github.com/zhoujh/WebpConvert_Gradle_Plugin.git'   // Git仓库的url
+group = "com.zhoujh.gradle"  // Maven Group ID for the artifact，一般填你唯一的包名
+version = "1.1.35"
 
 install {
     repositories.mavenInstaller {
@@ -23,9 +23,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'boyue'		//填写的一些基本信息
-                        name 'boyue'
-                        email 'daydayupon360@gmail.com'
+                        id 'zhoujh'		//填写的一些基本信息
+                        name 'zhoujh'
+                        email 'zhoujinhuang@163.com'
                     }
                 }
                 scm {
@@ -65,6 +65,7 @@ bintray {
         name = "webp_convert_gradle_plugin"	//发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
+        issueTrackerUrl = 'https://github.com/zhoujh/WebpConvert_Gradle_Plugin/issues'
         licenses = ["MIT"]
         publish = true
     }
